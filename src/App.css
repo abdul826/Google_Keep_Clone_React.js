@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kdam+Thmor+Pro&family=Montserrat:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--main-color);
+  }
+  .light-theme{
+    --main-color:white;
+    --title-color:Black;
+    --content-color:black;
+    --btn-color:rgb(152, 152, 152);
+  }
+  .dark-theme{
+    --main-color:rgb(73, 73, 73);
+    --title-color:rgb(255, 255, 255);
+    --content-color:rgb(255, 255, 255);
+    --btn-color:rgb(229, 229, 229);
+  }
+  .header{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(252, 209, 93);
+    box-shadow: 3px 3px 10px rgb(139, 138, 138);
+  }
+  .Heading{
+    margin-left: 37%;
+    margin-top: 12px;
+    color: white;
+    text-shadow: 2px 3px 7px rgb(188, 188, 188);
+    background-color: rgb(252, 209, 93);
+  }
+  .modeBtn{
+    margin-left: 35%;
+    height: 50%;
+    padding: 0px 15px;
+    margin-top: 17px;
+    background-color: transparent;
+    outline: none;
+  }
+
+    /* Create Note */
+
+    .main_note{
+        display: flex;
+        margin-left: 35%;
+        margin-top: 20px;
+        flex-direction: column;
+        width: 30%;
+        border: none;
+        padding: 0px 20px;
+        box-shadow: 1px 3px 7px rgb(157, 157, 157);
+        border-radius: 10px;
+      }
+    
+    input{
+        margin-top: 20px;
+        margin-left: 2%;
+        margin-bottom: 10px;
+        border: none;
+        outline: none;
+        padding: 5px 2px;
+        font-size: 22px;
+        font-family: 'Indie Flower', cursive;
+        color: var(--title-color);
+    }
+    
+    textarea{
+        margin-top: 5px;
+        border: none;
+        box-shadow: 1px 3px 7px rgb(157, 157, 157);
+        outline: none;
+        border-radius: 5px;
+        padding: 0px 10px;
+        width: 90%;
+        height: 5vh;
+        margin-bottom: 15px;
+        font-size: 18px;
+        font-family: 'Indie Flower', cursive;
+        color: var(--content-color);
+    }
+    
+    .btn{
+        padding: 5px 7px;
+        border-radius: 50%;
+        margin-top: 10px;
+        /* color:  rgb(252, 209, 93); */
+        border: none;
+        margin-left: 90%;
+        margin-bottom: 10px;
+        background-color: var(--btn-color);
+    }
+    .add{
+        font-size: 20px;
+        /* color: white; */
+        background-color: transparent;
+    }
+    
+/* Note */
+
+
+.note{
+    margin: 40px 50px;
+    box-shadow: 2px 2px 5px rgb(191, 191, 191);
+    width: 20%;
+    padding: 5px 10px;
+    background-color:  rgba(252, 210, 93, 0.868);
+    background-color: var(--main-color);
+}
+.title{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: var(--title-color);
+}
+.content{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--content-color);
+}
+.delBtn{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:  rgba(171, 171, 171, 0.449); */
+    background-color: var(--btn-color);
+    box-shadow: 2px 3px 5px rgb(122, 121, 121);
+    border: none;
+    border-radius: 50%;
+    margin-left: 80%;
+    /* margin-top: 95%; */
+    margin-bottom: 10px;
+}
+.delIcon{
+  background-color: transparent;
+}
+.delIcon:hover{
+    color: rgb(178, 57, 57);
+}
+
+/* Footer */
+  .footer{
+    margin-top: 35%;
+    text-align: center;
+    color: var(--title-color);
+  }
+
+  /* Responsive  */
+  @media only screen and (max-width: 1200px) {
+    .main_note{
+        width: 40%;
+      }
+      .modeBtn{
+        margin-left: 27%;
+        border: 1px solid white;
+        color: white;
+      }
+      .footer{
+        margin-top: 43%;
+      }
+  }
+
+  @media only screen and (max-width: 992px) {
+    .Heading{
+        margin-left: 30%;
+        margin-top: 13px;
+      }
+      .modeBtn{
+        margin-left: 27%;
+        border: 1px solid white;
+        color: white;
+      }
+    .main_note{
+        width: 50%;
+        margin-left: 25%;
+      }
+      .footer{
+        margin-top: 55%;
+      }
+      .note{
+        width: 28%;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .Heading{
+        margin-left: 30%;
+        margin-top: 13px;
+      }
+      .modeBtn{
+        margin-left: 20%;
+        /* margin-right: 0%; */
+        font-size: 12px;
+        border: 1px solid white;
+        color: white;
+      }
+    .main_note{
+        width: 50%;
+        margin-left: 25%;
+      }
+      .footer{
+        margin-top: 55%;
+      }
+      .note{
+        width: 28%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .Heading{
+        margin-left: 25%;
+        margin-top: 20px;
+        font-size: 23px;
+      }
+      .modeBtn{
+        margin-left: 20%;
+        /* margin-right: 0%; */
+        font-size: 12px;
+        border: 1px solid white;
+        color: white;
+      }
+    .main_note{
+        width: 60%;
+        margin-left: 20%;
+      }
+      .footer{
+        margin-top: 55%;
+      }
+      .note{
+        width: 32%;
+        margin-left: 20%;
+    }
+    .footer{
+        margin-top: 69%;
+      }
+    
+  }
+
+  @media only screen and (max-width: 400px) {
+    .Heading{
+        margin-left: 20%;
+        /* margin-top: 15px; */
+        font-size: 19px;
+        font-family: 'Montserrat', sans-serif;
+        /* width: 50%; */
+      }
+      .modeBtn{
+        margin-left: 12%;
+        margin-right: 3%;
+        font-size: 12px;
+        border: 1px solid white;
+        color: white;
+      }
+    .main_note{
+        width: 60%;
+        margin-left: 20%;
+      }
+      .btn{
+        padding: 0px 0px;  
+      }
+    
+      .note{
+        width: 45%;
+        margin-left: 20%;
+    }
+    .footer{
+        margin-top: 69%;
+      }
+    
+  }
+
+  @media only screen and (max-width: 300px) {
+    .Heading{
+        margin-left: 15%;
+        margin-top: 15px;
+        font-size: 17px;
+      }
+      .modeBtn{
+        margin-left: 12%;
+        margin-right: 3%;
+        font-size: 12px;
+        border: 1px solid white;
+        color: white;
+      }
+    .main_note{
+        width: 60%;
+        margin-left: 20%;
+      }
+      .btn{
+        width: 30px;
+        height: 30px;
+        padding: 0px 0px;  
+      }
+    
+      .note{
+        width: 55%;
+        margin-left: 20%;
+    }
+    
+    
+  }
